@@ -1,10 +1,10 @@
-document.getElementById('btn-submit').addEventListener('click', function(){
+document.getElementById('btn-submit').addEventListener('click', function () {
     const emailCheck = document.getElementById('user-email');
     const passCheck = document.getElementById('user-password');
-    if(emailCheck.value.endsWith('@gmail.com') && passCheck.value == "nurnipu"){
+    if (emailCheck.value.endsWith('@gmail.com') && passCheck.value == "1234login") {
         window.location.href = 'bank.html';
     }
-    else{
+    else {
         const error = document.createElement('p');
         const parentDiv = document.getElementById('div-1');
         error.innerText = '!!your mail or password is invalid please check!!';
