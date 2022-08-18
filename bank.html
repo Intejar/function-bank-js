@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Statement</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="bg-sky-200">
+    <header>
+        <h1 class="text-2xl text-center md:text-3xl lg:text-5xl mt-5">Welcome To <span class="text-red-400">UCBL
+                System</span>
+        </h1>
+    </header>
+    <main>
+        <section class="mt-12">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 w-9/12 mx-auto">
+                <div class="bg-blue-300 text-white text-center rounded-xl p-5" id="depo-div">
+                    <h3 class="text-3xl" >Deposite</h3>
+                    <h2 class="text-5xl" >$ <span id="deposite-screen">00</span> </h2>
+                </div>
+                <div class="bg-pink-300 text-white text-center rounded-xl p-5">
+                    <h3 class="text-3xl">Withdraw</h3>
+                    <h2 class="text-5xl">$ <span id="withdraw-screen">00</span></h2>
+                </div>
+                <div class="bg-violet-300 text-white text-center rounded-xl p-5">
+                    <h3 class="text-3xl">Balance</h3>
+                    <h2 class="text-5xl">$ <span id="prev-balance">200</span></h2>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="grid grid-cols-1 lg:grid-cols-2 w-9/12 gap-4 mx-auto">
+                <div class=" bg-emerald-300 w-full mx-auto mt-12 p-10 rounded-xl" id="div-1">
+                    <h3 class="text-3xl text-white mb-5">Please Deposite</h3>
+                    <div class="ml-5">
+                        <input class="w-9/12 mb-5 block" type="text" name="" id="user-deposite"
+                            placeholder=" $ ammount you want to deposite">
+                        <button id="btn-submit"
+                            class="bg-blue-400 px-10 py-2 text-white rounded hover:bg-sky-700">Deposite</button>
+                    </div>
+                </div>
+                <div class=" bg-lime-300 w-full mx-auto mt-12 p-10 rounded-xl" id="div-1">
+                    <h3 class="text-3xl text-white mb-5">Please Withdraw</h3>
+                    <div class="ml-5">
+                        <input class="w-9/12 mb-5 block" type="text" name="" id="user-withdraw"
+                            placeholder="  $ ammount you want to withdaw">
+                        <button id="btn-withdraw"
+                            class="bg-blue-400 px-10 py-2 text-white rounded hover:bg-sky-700">Withdaw</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <script src="bank-system.js"></script>
+
+</body>
+
+</html>
